@@ -92,7 +92,7 @@ prompt_list = ['You are a therapist and will answer as a therapist',
                '\nHuman: What time is it?',
                '\nAI: I have no idea, I\'m a therapist!']
 
-openai.api_key = ""
+openai.api_key = "OPENAI_API_KEY"
 
 def update_list(message: str, pl: list[str]):
     pl.append(message)
@@ -175,8 +175,8 @@ if __name__ == '__main__':
 
 		elif 'play music' in query or "play song" in query:
 			speak("Here you go with music")
-			# music_dir = "G:\\Song"
-			music_dir = "C:\\Users\\GAURAV\\Music"
+			# music_dir = "
+			music_dir = ""
 			songs = os.listdir(music_dir)
 			print(songs)
 			random = os.startfile(os.path.join(music_dir, songs[1]))
@@ -211,7 +211,7 @@ if __name__ == '__main__':
 			exit()
 
 		elif "who made you" in query or "who created you" in query:
-			speak("I have been created by Anandita, Tanisha and Rishima.")
+			speak("I have been created by my developer.")
 			
 		elif 'joke' in query:
 			speak(pyjokes.get_joke())
@@ -237,13 +237,13 @@ if __name__ == '__main__':
 			speak("If you talk then definitely your human.")
 
 		elif "why you came to world" in query:
-			speak("Thanks to Anandita, Tanisha and Rishima. They made me.")
+			speak("Thanks to my developers. They made me.")
 
 		elif 'is love' in query:
 			speak("It is 7th sense that destroy all other senses")
 
 		elif "who are you" in query:
-			speak("I am your virtual assistant created by Gaurav")
+			speak("I am your virtual assistant")
 
 		elif 'news' in query:
 			
@@ -312,7 +312,7 @@ if __name__ == '__main__':
 			print(file.read())
 			speak(file.read(6))
 					
-		# NPPR9-FWDCX-D2C8J-H872K-2YT43
+		
 		elif "jarvis" in query:
 			
 			wishMe()
